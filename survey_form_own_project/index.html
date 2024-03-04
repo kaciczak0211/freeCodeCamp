@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help improve our product.</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form_part">
+                <label for="" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="" id="number-label">Age(optional)</label>
+                <input type="number" id="number" placeholder="Enter your Age" min="13" max="130">
+            </div>
+            <div class="form_part">
+                <label for="dropdown">Which programming language is your favourite?
+                    <select name="dropdown" id="dropdown">
+                        <option value="">Choose one</option>
+                        <option value="">Phyton</option>
+                        <option value="">JavaScript</option>
+                        <option value="">C++</option>
+                        <option value="">C#</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form_part">
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <label for="like"><input type="radio" name="recommend" id="like" value="yes" class="inline">Yes</label>
+                <label for="dislike"><input type="radio" name="recommend" id="dislike" value="no" class="inline">No</label>
+            </div>
+            <div class="form_part">
+                <label for="lang">Which programming resources are the best for you?</label>
+                <input type="checkbox" value="youtube" class="inline"> Youtube<br>
+                <input type="checkbox" value="github" class="inline"> Github<br>
+                <input type="checkbox" value="fcc" class="inline"> FreeCodeCamp<br>
+                <input type="checkbox" value="udemy" class="inline"> Udemy<br>
+                <input type="checkbox" value="other" class="inline"> Other<br>
+            </div>
+            <label for="textarea">Do you have any idea how to improve our page?
+                <textarea name="textarea" id="textarea"" cols="30" rows="10" placeholder="It will be awesome to see more..."></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </div>
+</body>
+</html>

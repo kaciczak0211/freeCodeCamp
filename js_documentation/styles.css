@@ -2,20 +2,30 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+}
+
+header{
+    padding: 20px 0;
+    font-size: large;
+}
+#main-doc{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vh;
+}
+
 html{
     font-family: sans-serif;
     background-color: aliceblue;
 }
 
-nav{
+#navbar{
     min-width: 30vh;
+    border-right: solid;
 }
-
-#main-doc{
-    display: flex;
-}
-
-nav ul{
+#navbar ul{
     padding: 0;
     list-style-type: none;
 }
@@ -25,13 +35,33 @@ li a{
     color: black;
 }
 
-nav ul li{
+#navbar ul li{
     border-bottom: 2px solid black;
 }
 
 li{
-    padding: 20px 10px;
+    padding: 20px 30px;
 }
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i{
+    font-size: 25px;
+}
+
+.logo h1{
+    font-size: 25px;
+}
+
+#main-doc{
+    display: flex;
+}
+
 
 /* conent on page */
 .text{
@@ -46,3 +76,16 @@ code{
     padding: 10px;
     background-color: antiquewhite;
 }
+
+/* mobile */
+
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #main-doc{
+        padding: 0 5vh;
+    }
+  }

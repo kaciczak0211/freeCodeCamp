@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 2rem;
+}
+
+
+
+section{
+    margin-bottom: 10rem;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+input[type=submit]{
+    border: none;
+    background-color: #e73631;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e73631;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#header-img{
+    padding-left: 2rem;
+    width: 200px;
+    height: auto;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    margin-top: 10rem;
+}
+
+.headline img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline h2{
+    text-align: center;
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.feature-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+
+  
+  /* Phone */
+  @media screen and (max-width: 900px) {
+    .feature {
+      width: 100%; /* 1 item per row on phones */
+    }
+  }
+
+.feature img{
+    width: 12rem;
+}
+
+.feature h3{
+    width: 12rem;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.feature h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+#gameplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-selection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.product{
+    background-color: #e73631;
+    color: white;
+    width: 25%;
+    text-align: center;
+    border: solid 1px white;
+}
+.product ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.product button{
+    margin-bottom: 1rem;
+    border: none;
+    background-color: white;
+    color: #e73631;
+    padding: 0.2rem 1rem;
+    border-radius: 10%;
+}
+
+.product h3{
+    background-color: #c02b27;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #c02b27;
+}
